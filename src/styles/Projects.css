@@ -1,0 +1,215 @@
+.projects {
+  position: relative;
+  min-height: 100vh;
+  padding: 7rem 2rem;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(31, 41, 55, 0.96));
+  color: white;
+}
+
+.projects-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.projects-shape-1 {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  top: 12%;
+  left: -120px;
+  opacity: 0.16;
+}
+
+.projects-ring-1 {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  right: 5%;
+  bottom: 8%;
+  border-color: rgba(192, 132, 252, 0.18);
+}
+
+.projects-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  max-width: 650px;
+  margin-bottom: 4rem;
+}
+
+.projects-header h2 {
+  margin: 1.2rem 0 1.5rem;
+  font-size: clamp(40px, 5.5vw, 64px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: white;
+}
+
+.projects-header h2 em {
+  font-style: italic;
+  background: linear-gradient(135deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-header p {
+  max-width: 540px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.07);
+  color: white;
+  text-decoration: none;
+  transition: border-color 0.35s ease, background 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(192, 132, 252, 0.55);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.project-card-visual {
+  position: relative;
+  min-height: 230px;
+  padding: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.project-card-indigo .project-card-visual {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(129, 140, 248, 0.8), transparent 38%),
+    linear-gradient(135deg, #312e81, #1e1b4b);
+}
+
+.project-card-rose .project-card-visual {
+  background:
+    radial-gradient(circle at 85% 15%, rgba(244, 114, 182, 0.75), transparent 38%),
+    linear-gradient(135deg, #9d174d, #4c0519);
+}
+
+.project-card-status,
+.project-card-number {
+  position: relative;
+  z-index: 1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.project-card-status {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.project-card-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  font-size: 68px;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-number {
+  opacity: 0.65;
+}
+
+.project-card-body {
+  padding: 1.8rem;
+}
+
+.project-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  margin: 0 0 0.8rem;
+  font-size: 25px;
+  line-height: 1.2;
+  color: white;
+}
+
+.project-card-body p {
+  margin: 0 0 1.5rem;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.project-card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card-stack span {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 1rem;
+    min-height: auto;
+  }
+
+  .projects-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .projects-header h2 {
+    font-size: 38px;
+  }
+
+  .project-card-visual {
+    min-height: 190px;
+  }
+}
