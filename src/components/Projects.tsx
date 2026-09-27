@@ -5,15 +5,15 @@ import '../styles/Projects.css'
 const projects = [
   {
     number: '01',
-    title: 'Suraksha WB',
+    title: 'Kz Computers',
     category: 'Computer services management',
     description:
       'A full-stack workspace for tickets, quotes, invoices, and customer relationships.',
-    status: 'In progress',
+    status: 'Live',
     stack: ['Next.js', 'PostgreSQL', 'Prisma'],
     tone: 'indigo',
     icon: '⌘',
-    url: 'https://github.com/pranav4417/kzcomputers',
+    url: 'https://kzcomputers.vercel.app',
     external: true,
   },
   {
@@ -28,6 +28,18 @@ const projects = [
     icon: '◆',
     url: '#home',
     external: false,
+  },
+  {
+    number: '03',
+    title: 'Kriya Music',
+    category: 'Music platform',
+    description: 'A Vercel-hosted experience for Kriya Music.',
+    status: 'Live',
+    stack: ['Next.js', 'Vercel'],
+    tone: 'purple',
+    icon: '♪',
+    url: 'https://kriyamusic.vercel.app/',
+    external: true,
   },
 ]
 

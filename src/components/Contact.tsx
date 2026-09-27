@@ -48,8 +48,8 @@ export default function Contact() {
           <button className="btn btn-primary">
             Start a conversation <span>→</span>
           </button>
-          <a href="mailto:hello@studio.com" className="btn-link">
-            hello@studio.com
+            <a href="mailto:devviroservices@gmail.com" className="btn-link">
+            devviroservices@gmail.com
           </a>
         </motion.div>
 
@@ -62,7 +62,7 @@ export default function Contact() {
         >
           <div className="info-item">
             <span className="label">Email</span>
-            <a href="mailto:hello@studio.com">hello@studio.com</a>
+            <a href="mailto:devviroservices@gmail.com">devviroservices@gmail.com</a>
           </div>
           <div className="info-item">
             <span className="label">Phone</span>

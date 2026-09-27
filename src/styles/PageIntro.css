@@ -3,7 +3,7 @@
   min-height: 520px;
   display: flex;
   align-items: center;
-  padding: 8rem 2rem 5rem;
+  padding: 9rem 2rem 5rem;
   overflow: hidden;
   background:
     radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.12), transparent 32%),

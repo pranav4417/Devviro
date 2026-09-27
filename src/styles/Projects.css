@@ -111,6 +111,12 @@
     linear-gradient(135deg, #9d174d, #4c0519);
 }
 
+.project-card-purple .project-card-visual {
+  background:
+    radial-gradient(circle at 25% 20%, rgba(192, 132, 252, 0.85), transparent 40%),
+    linear-gradient(135deg, #5b21b6, #2d0b4e);
+}
+
 .project-card-status,
 .project-card-number {
   position: relative;
